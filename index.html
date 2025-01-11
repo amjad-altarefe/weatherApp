@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Applications</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .container{
+            height: 100vh;
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.495) 1%, rgba(192, 192, 192, 0.797) ); 
+        }
+        .contain{
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .contain button{
+            height: 75px;
+            width: 350px;
+            padding: 20px;
+            font-size: 25px;
+            border-style: none;
+            border-radius: 10px;
+            background-image: linear-gradient(to  right,rgba(30, 143, 255, 0.855) ,rgba(137, 0, 178, 0.5) 80%);
+            box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.326) ;
+            font-family: fantasy;
+            color: rgba(255, 255, 255, 0.812);
+            transition: 0.5s;
+            cursor: pointer;
+            
+        }
+        button:hover{
+            width: 400px;
+            height: 85px;
+            font-size: 30px;
+        }
+        .contain .part1{
+            position: absolute;
+            top: 150px;
+            left: 150px;
+            font-size: 130px;
+            color: yellow;
+            text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.538);
+            transition: 0.5s;
+        }
+        .contain .part2{
+            position: absolute;
+            bottom: 145px;
+            left: 140px;
+            font-size: 120px;
+            text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.538);
+            transition: 0.5s;
+            
+        }
+        .contain .part3{
+            position: absolute;
+            bottom: 100px;
+            right: 150px;
+            font-size: 150px;
+            color: white;
+            text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.538);
+            transition: 0.5s;
+        }
+        .contain .part4{
+            position: absolute;
+            top: 150px;
+            right: 150px;
+            font-size: 150px;
+            color: white;
+            text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.538);
+            transition: 0.5s;
+        }
+        .part1:hover{
+            font-size: 150px;
+        }
+        .part2:hover{
+            font-size: 140px;
+        }
+        .part3:hover{
+            font-size: 170px;
+        }
+        .part4:hover{
+            font-size: 170px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="contain">
+            <button onclick="go()" type="submit">click here to know weather</button>
+            <span class="part2">&#9925;</span>
+            <span class="part1">&#9728;</span>
+            <span class="part3">&#127785;</span>
+            <span class="part4">&#127782;</span>
+        </div>
+    </div>
+</body>
+<script>
+    function go(){
+        window.location="index2.html"
+    }
+</script>
+</html>
